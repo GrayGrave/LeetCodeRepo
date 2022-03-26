@@ -1,2 +1,0 @@
-# LeetCodeRepo
-My LeetCode Repository.
