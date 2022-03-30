@@ -16,7 +16,7 @@ public class QuickSort {
         quickSort(arr, pivotIndex + 1, r);
     }
 
-    private static int partition(int[] arr, int l, int r) {  //todo ??
+    private static int partition(int[] arr, int l, int r) {  // todo ??
         int pivot = arr[l];
         int mark = l;
 

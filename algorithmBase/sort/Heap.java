@@ -52,7 +52,7 @@ public class Heap {
     }
 
 
-    // todo 堆排序算法 O(NlogN)  额外空间复杂度O(1)
+    //  堆排序算法 O(NlogN)  额外空间复杂度O(1)
     public static void heapSort(int[] arr) {
         if (arr == null || arr.length < 2) return;
 
@@ -85,7 +85,7 @@ public class Heap {
     private static void heapify(int[] arr, int index, int heapSize) {
         int left = index * 2 + 1;
         while (left < heapSize) {
-            // todo left + 1 = heapSize?  => heapSize 是指向最后元素的下一个位置
+            // note  left + 1 = heapSize?  => heapSize 是指向最后元素的下一个位置
             int largest = left + 1 < heapSize && arr[left + 1] > arr[left] ? left + 1 : left;
             largest = arr[largest] > arr[index] ? largest : index;
 

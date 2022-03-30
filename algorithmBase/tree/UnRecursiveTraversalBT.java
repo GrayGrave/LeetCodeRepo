@@ -72,8 +72,8 @@ public class UnRecursiveTraversalBT {
             while (!stack.isEmpty() || head != null) {
                 if (head != null) {         // 1)
                     stack.push(head);
-                    head = head.left;     // 往左窜
-                } else {                 // 2)
+                    head = head.left;       // 往左窜
+                } else {                    // 2)
                     head = stack.pop();
                     System.out.println(head.value);
                     head = head.right;

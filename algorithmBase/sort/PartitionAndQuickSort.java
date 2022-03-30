@@ -20,7 +20,7 @@ public class PartitionAndQuickSort {
             }
             index++;
         }
-        swap(arr, ++lessEqual, r);   // todo 直接合并在while（）中 ？ => r位置为基准值最后处理，某些问题需要特殊处理
+        swap(arr, ++lessEqual, r);   // note  直接合并在while（）中 ？ => r位置为基准值最后处理，某些问题需要特殊处理
         return lessEqual;   // 返回基准值下标
     }
 
@@ -73,7 +73,7 @@ public class PartitionAndQuickSort {
     }
 
 
-    // 快排 v3.0   随机选取选取一个与最后一个位置交换作为基准值 todo 经典快排  O(NlogN)
+    // 快排 v3.0   随机选取选取一个与最后一个位置交换作为基准值   经典快排  O(NlogN)
     private static void process3(int[] arr, int l, int r) {
         if (l >= r) return;     // 边界条件
 
