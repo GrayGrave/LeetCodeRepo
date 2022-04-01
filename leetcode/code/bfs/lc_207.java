@@ -8,7 +8,7 @@ import java.util.Queue;
 /**
  * 课程表  [0,1] 代表课程0的先修课程是1
  * 判断是否可以完成所有的课程学习（判断课程之间的有向图是否存在环）？即是否存在拓扑排序问题，秋招字节面试曾遇到此题
- * 思路：BFS
+ * 思路：bfs
  */
 public class lc_207 {
     public boolean canFinish(int numCourses, int[][] prerequisites) {

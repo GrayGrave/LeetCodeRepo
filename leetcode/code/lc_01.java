@@ -2,6 +2,11 @@ package leetcode.code;
 
 import java.util.HashMap;
 
+/**
+ * 两数之和
+ * 思路：HashMap
+ */
+
 public class lc_01 {
     public int[] twoSum(int[] nums, int target) {
         // 边界检查

@@ -18,8 +18,8 @@ public class lc_103 {
         // 标识层间遍历的方向
         boolean toRight = true;
         while (!queue.isEmpty()) {
-            int size = queue.size();
-            List<Integer> chain = new ArrayList<>();
+            int size = queue.size();                    // 确定每一层的宽度
+            List<Integer> chain = new ArrayList<>();    // 记录每一层的结果
             for (int i = 0; i < size; i++) {
                 TreeNode cur = queue.poll();
                 chain.add(cur.val);

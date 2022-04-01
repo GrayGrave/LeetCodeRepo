@@ -7,6 +7,7 @@ import java.util.Queue;
 
 /**
  * 课程表II  返回任意一种课程完成顺序
+ * 思路：bfs
  */
 public class lc_210 {
     public int[] findOrder(int numCourses, int[][] prerequisites) {

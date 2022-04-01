@@ -2,7 +2,7 @@ package leetcode.code.bfs;
 
 /**
  * 岛屿最大面积
- * 思路：dfs
+ * 思路：dfs/bfs
  * 和lc200岛屿数量的区别：进行搜索时关注面积，最后返回最大岛屿面积
  */
 public class lc_695 {
