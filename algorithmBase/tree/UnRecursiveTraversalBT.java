@@ -31,7 +31,7 @@ public class UnRecursiveTraversalBT {
     }
 
     /**
-     * 先序：根-左-右 => 根-右-左 => 逆序(左-右-根)即为后序！！
+     * note: 先序：根-左-右 => 根-右-左 => 逆序(左-右-根)即为后序！！
      * 思路参考先序：
      * 1) 栈弹出放入另一个栈
      * 2）如有左，压入左
@@ -47,13 +47,13 @@ public class UnRecursiveTraversalBT {
             while (!s1.isEmpty()) {
                 head = s1.pop();
                 s2.push(head);
-                System.out.println(head.value);
+                System.out.println(head.value);         // 根-右-左
                 if (head.left != null) s1.push(head.left);
                 if (head.right != null) s1.push(head.right);
             }
 
             while (!s2.isEmpty()) {
-                System.out.println(s2.pop().value);
+                System.out.println(s2.pop().value);      // 左-右-根
             }
         }
     }

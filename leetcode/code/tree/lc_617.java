@@ -4,7 +4,7 @@ import leetcode.dataStruct.TreeNode;
 
 /**
  * 合并二叉树
- * 二叉树覆盖，都有值则相加
+ * 思路：遍历，二叉树覆盖，都有值则相加
  */
 public class lc_617 {
     public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {

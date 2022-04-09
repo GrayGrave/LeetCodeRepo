@@ -8,8 +8,32 @@ import leetcode.dataStruct.TreeNode;
  * 思路：典型二叉树递归套路
  */
 public class lc_543 {
-
+    /** 解法一：树的最大距离是某节点的左右子树深度和最大，故后序时关注左右子树返回的树深度即可 */
+    // 记录最大直径的长度
+    int maxDiameter = 0;
     public int diameterOfBinaryTree(TreeNode root) {
+        maxDepth(root);
+        return maxDiameter;
+    }
+
+    int maxDepth(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        int leftMax = maxDepth(root.left);
+        int rightMax = maxDepth(root.right);
+
+        // 后序位置，顺便计算最大直径
+        int myDiameter = leftMax + rightMax;
+        maxDiameter = Math.max(maxDiameter, myDiameter);
+
+        return 1 + Math.max(leftMax, rightMax);
+    }
+
+    /**=============================== 分割线 ====================================*/
+
+    // 解法二:
+    public int diameterOfBinaryTree2(TreeNode root) {
         // 两点之间的路径长度是以他们之间的边数目表示，路径经过节点减1即可
         return process(root).maxDistance - 1;
     }

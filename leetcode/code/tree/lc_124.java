@@ -24,21 +24,4 @@ public class lc_124 {
         ret = Math.max(ret, r.val + left + right);
         return Math.max(left, right) + r.val;
     }
-
-
-    // todo 二叉树递归套路未走通
-    /* public int getMax(TreeNode root) {
-        return process(root);
-    }
-    private static int process(TreeNode root) {
-        if (root == null) return 0;
-        // 1、获取左右子树信息
-        int left = process(root.left);
-        int right = process(root.right);
-
-        // 2、整理并返回信息
-        int max = Math.max(Math.max(left, right), left + right + root.val);
-        return max;
-    }*/
-
 }
