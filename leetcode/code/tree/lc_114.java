@@ -1,6 +1,6 @@
 package leetcode.code.tree;
 
-import leetcode.dataStruct.TreeNode;
+import leetcode.A_dataStruct.TreeNode;
 
 /**
  * 二叉树展开为链表

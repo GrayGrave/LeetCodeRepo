@@ -19,7 +19,7 @@ public class lc_207 {
         // 进行BFS的队列
         Queue<Integer> queue = new LinkedList<>();
 
-        // 记录每个节点一条记录连接情况的List
+        // 每个节点一条list，记录连接情况的
         for (int i = 0; i < numCourses; i++) {
             adjacency.add(new ArrayList<>());
         }
@@ -33,7 +33,7 @@ public class lc_207 {
         }
 
         for (int i = 0; i < numCourses; i++) {
-            // 入度为零的课程成功出队-> 拓扑排序可以成功摘掉的节点
+            // note：入度为零的课程成功出队-> 拓扑排序可以成功摘掉的节点
             if (inDegrees[i] == 0) queue.offer(i);
         }
 

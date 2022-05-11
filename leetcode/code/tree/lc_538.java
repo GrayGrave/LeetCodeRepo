@@ -1,6 +1,6 @@
 package leetcode.code.tree;
 
-import leetcode.dataStruct.TreeNode;
+import leetcode.A_dataStruct.TreeNode;
 
 /**
  * 把二叉搜索树转换为累加树

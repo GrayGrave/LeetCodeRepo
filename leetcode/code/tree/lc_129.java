@@ -1,8 +1,6 @@
 package leetcode.code.tree;
 
-import leetcode.dataStruct.TreeNode;
-
-import java.util.List;
+import leetcode.A_dataStruct.TreeNode;
 
 /**
  * 求根到叶子节点数字之和

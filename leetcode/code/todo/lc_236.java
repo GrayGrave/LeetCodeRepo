@@ -1,6 +1,6 @@
 package leetcode.code.todo;
 
-import leetcode.dataStruct.TreeNode;
+import leetcode.A_dataStruct.TreeNode;
 
 /**
  * 二叉树的最近公共祖先  git rebase合并原理

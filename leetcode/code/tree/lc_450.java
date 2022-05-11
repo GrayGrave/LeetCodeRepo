@@ -1,6 +1,6 @@
 package leetcode.code.tree;
 
-import leetcode.dataStruct.TreeNode;
+import leetcode.A_dataStruct.TreeNode;
 
 /**
  * 删除二叉搜索树中的节点    返回删除节后的二叉树的根节点引用

@@ -8,8 +8,8 @@ import java.util.Stack;
  * 思路：单调栈/化整为零
  *
  * 单调栈解决问题的原型，即数组中的每个元素需要知道左边和右边离它最近的比它大的数是多少。
- * 1.解决上述问题最简单直观的做法，就是创建数组挨着去找左边和右边离它最近切比它大的数（方法一）
- * 2.优化一点，即可利用单调栈进行解决(方法二)
+ * 1.解决上述问题最简单直观的做法，就是创建数组挨着去找左边和右边离它最近切比它大的数（方法二）
+ * 2.优化一点，即可利用单调栈进行解决(方法一)
  *
  * 单调栈详解
  * 数组： 5，4，3，6，1，2，0，7
@@ -29,9 +29,8 @@ public class lc_42 {
         Stack<Integer> stack = new Stack<>();
         for (int i = 0; i < height.length; i++) {
             while (!stack.isEmpty() && height[stack.peek()] < height[i]) {// 出栈，生成目前栈顶元素的左右比它大距离最近的相关信息
-                int curr = stack.peek();  // 产出该元素的信息
-                stack.pop();
-                if (stack.isEmpty()) {
+                int curr = stack.pop();  // 产出该元素的信息
+                if (stack.isEmpty()) {   // 左边没有更高的边界，无法横扫出"矩阵块"
                     break;
                 }
                 int left = stack.peek();  // 左边最近的比它大的元素

@@ -8,7 +8,29 @@ import java.util.List;
  * 思路: 依次尝试往右、下、左、上走直线，碰到边界或者已经访问过的位置，则尝试下一个方向
  */
 public class lc_54 {
-    public List<Integer> spiralOrder(int[][] matrix) {
+    public int[] spiralOrder(int[][] matrix) {
+        if (matrix.length == 0) return new int[0];
+
+        int l = 0, r = matrix[0].length - 1, t = 0, b = matrix.length - 1, x = 0;
+        int[] res = new int[(r + 1) * (b + 1)];
+        while (true) {
+            for (int i = l; i <= r; i++) res[x++] = matrix[t][i]; //left->right  活动空间减去顶层
+            if (++t > b) break;
+
+            for (int i = t; i <= b; i++) res[x++] = matrix[i][r]; //top->bottom  活动空间减去右边一竖
+            if (--r < l) break;
+
+            for (int i = r; i >= l; i--) res[x++] = matrix[b][i]; //right->left   活动空间减去底层
+            if (--b < t) break;
+
+            for (int i = b; i >= t; i--) res[x++] = matrix[i][l]; //bottom->top   活动空间减去左边一竖
+            if (++l > r) break;
+        }
+        return res;
+    }
+
+
+    public List<Integer> spiralOrder2(int[][] matrix) {
         List<Integer> res = new ArrayList<Integer>();
         if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
             return res;

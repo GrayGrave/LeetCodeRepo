@@ -1,6 +1,6 @@
 package leetcode.code.tree;
 
-import leetcode.dataStruct.TreeNode;
+import leetcode.A_dataStruct.TreeNode;
 
 import java.util.HashMap;
 
@@ -10,7 +10,7 @@ import java.util.HashMap;
  *
  */
 public class lc_106 {
-    // 存储 inorder 中值到索引的映射
+    // 存储 inorder 中值到索引的映射💡
     HashMap<Integer, Integer> valToIndex = new HashMap<>();
 
     public TreeNode buildTree(int[] inorder, int[] postorder) {

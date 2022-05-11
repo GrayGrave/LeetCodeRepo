@@ -1,6 +1,6 @@
 package leetcode.code.linkedList;
 
-import leetcode.dataStruct.ListNode;
+import leetcode.A_dataStruct.ListNode;
 
 /**
  * 删除链表的倒数第 N 个节点

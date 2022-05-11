@@ -1,6 +1,6 @@
 package leetcode.code.heap;
 
-import leetcode.dataStruct.ListNode;
+import leetcode.A_dataStruct.ListNode;
 
 import java.util.PriorityQueue;
 

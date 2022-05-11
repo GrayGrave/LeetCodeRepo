@@ -1,6 +1,6 @@
 package leetcode.code.linkedList;
 
-import leetcode.dataStruct.ListNode;
+import leetcode.A_dataStruct.ListNode;
 
 /**
  * 反转链表

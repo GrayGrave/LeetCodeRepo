@@ -1,14 +1,14 @@
 package leetcode.code.tree;
 
-import leetcode.dataStruct.TreeNode;
+import leetcode.A_dataStruct.TreeNode;
 
 
 /**
- * 二叉树的直径   即树的最大距离
+ * 二叉树的直径   即二叉树的最大距离
  * 思路：典型二叉树递归套路
  */
 public class lc_543 {
-    /** 解法一：树的最大距离是某节点的左右子树深度和最大，故后序时关注左右子树返回的树深度即可 */
+    /** 解法一：树的最大距离必定是某节点的左右子树深度和，故后序时关注左右子树返回的树深度即可 */
     // 记录最大直径的长度
     int maxDiameter = 0;
     public int diameterOfBinaryTree(TreeNode root) {
@@ -30,7 +30,7 @@ public class lc_543 {
         return 1 + Math.max(leftMax, rightMax);
     }
 
-    /**=============================== 分割线 ====================================*/
+    /**================================ 分割线 ====================================*/
 
     // 解法二:
     public int diameterOfBinaryTree2(TreeNode root) {

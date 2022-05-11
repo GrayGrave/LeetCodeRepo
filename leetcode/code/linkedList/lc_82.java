@@ -1,6 +1,6 @@
 package leetcode.code.linkedList;
 
-import leetcode.dataStruct.ListNode;
+import leetcode.A_dataStruct.ListNode;
 
 /**
  * 删除排序链表中的重复元素II   删除其中重复节点

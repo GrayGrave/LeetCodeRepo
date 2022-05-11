@@ -1,6 +1,6 @@
 package leetcode.code.linkedList;
 
-import leetcode.dataStruct.ListNode;
+import leetcode.A_dataStruct.ListNode;
 
 /**
  * K 个一组翻转链表   note: ‼️coding检验题型
