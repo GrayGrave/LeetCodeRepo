@@ -1,6 +1,6 @@
 package 剑指offer;
 
-import leetcode.A_dataStruct.ListNode;
+import leetcode.code.dataStruct.ListNode;
 
 import java.util.Stack;
 

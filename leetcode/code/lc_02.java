@@ -1,7 +1,7 @@
 package leetcode.code;
 
 
-import leetcode.A_dataStruct.ListNode;
+import leetcode.code.dataStruct.ListNode;
 
 /**
  * 两数相加      除了0外，两个数都不以0开头

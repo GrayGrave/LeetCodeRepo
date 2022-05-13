@@ -1,6 +1,6 @@
 package 剑指offer;
 
-import leetcode.A_dataStruct.TreeNode;
+import leetcode.code.dataStruct.TreeNode;
 
 /**
  * 二叉树的镜像
