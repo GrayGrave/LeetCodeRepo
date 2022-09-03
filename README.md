@@ -66,9 +66,9 @@ My LeetCode Repository.
 
 ## 📚 LeetCode 精选题单 
 - [🔥 LeetCode热题 Hot 100](./leetcode/analysis/classification/LeetCodeHot100.md)
-- [🗡️ 剑指offer (第2版)](./剑指offer/剑指offer.md)
-- [⛵️ 程序员代码面试指南 (左程云)](./程序员代码面试指南)  【 todo 📌 】
-- [🕰️ 程序员面试金典 (第6版)](./程序员面试金典) 【 todo 📌 】
+- [🗡️ 剑指offer (第2版)](./pointAtOffer/剑指offer.md)
+- [⛵️ 程序员代码面试指南 (左程云)](./codingInterviewGuide)  【 todo 📌 】
+- [🕰️ 程序员面试金典 (第6版)](./crackingTheCodingInterview) 【 todo 📌 】
 
 
 

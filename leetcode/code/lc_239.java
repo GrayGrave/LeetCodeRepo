@@ -4,14 +4,15 @@ import java.util.LinkedList;
 import java.util.PriorityQueue;
 
 /**
- * 滑动窗口最大值
+ * 滑动窗口最大值 剑指offer经典题
  * 思路：堆、双端队列
  */
 public class lc_239 {
-    // 解法一:双端队列
+    // 解法一:双端队列（Deque），即左右都可以进出   <-> ==== <->
     public int[] maxSlidingWindow(int[] nums, int k) {
         if (nums == null || nums.length == 0) return new int[0];
         LinkedList<Integer> queue = new LinkedList<>();
+
         int[] res = new int[nums.length - k + 1];
         int index = 0;
         for (int i = 0; i < nums.length; i++) {
